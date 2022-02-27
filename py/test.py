@@ -1,4 +1,10 @@
 #%% case 1
+from audioop import add
+from ctypes.wintypes import PINT
+from re import S
+from this import d
+
+
 test_score = [100, 20, 40 ,37, 41]
 num = 0
 for a in test_score :
@@ -50,5 +56,28 @@ while i <= 1000:
     i += 1
 
 print(result) 
+
+# %%
+# S skill
+ad = 100
+add_Ad = ad+(0.58+0.16)*100
+add_Damage = 1.2*1.5
+skill_Damage_S = 0.5*add_Ad + 1000
+s = skill_Damage_S*add_Damage
+print(round(s))
+
+# C skill
+ad = 180 
+add_Ad = ad+(0.12+0.13)*100
+add_Damage = 1.05*1.11
+skill_Damage_C = 0.2*add_Ad + 1200
+c = skill_Damage_C*add_Damage
+print(round(c))
+if c > s:
+    print("C가 S보다 강하다")
+else:
+    print("S가 C보다 강하다")
+     
+# %%
 
 # %%
