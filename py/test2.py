@@ -46,13 +46,19 @@ for a in range(1,1001):
 print(num)
    
 # %%
-result = [ for a in range(1,1001)
+result = [ a for a in range(1,1001)
 if a % 3 ==0]
-print(result)
+print(sum(result))
 # %%
 result = 0
 for n in range(1, 1000):
     if n % 3 == 0: 
         result += n
+print(result)
+# %%
+result = 0
+for n in range(1,1001):
+  if n %3 == 0 or n % 5 ==0:
+    result += n
 print(result)
 # %%
